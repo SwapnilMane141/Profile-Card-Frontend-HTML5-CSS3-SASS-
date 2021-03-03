@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: Kumbh Sans;
+  font-weight: 300;
+  color: #6a6f81;
+  background-image: linear-gradient(#19a2ae, #19a2ae);
+  background-size: 100%;
+  background-repeat: repeat;
+  height: 100vh;
+  overflow: hidden; }
+
+.header {
+  position: relative; }
+
+.profile-card {
+  display: block;
+  border-radius: 1rem;
+  min-height: 30rem;
+  min-width: 30rem;
+  background-color: white;
+  margin-top: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  z-index: 200;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 75em) {
+    .profile-card {
+      transform: translate(-50%, -30%); } }
+  @media only screen and (max-width: 56.25em) {
+    .profile-card {
+      transform: translate(-50%, -20%); } }
+  @media only screen and (max-width: 46.875em) {
+    .profile-card {
+      transform: translate(-50%, 10%); } }
+  @media only screen and (max-width: 37.5em) {
+    .profile-card {
+      transform: translate(-50%, 20%); } }
+  @media only screen and (max-width: 25em) {
+    .profile-card {
+      transform: translate(-50%, 50%); } }
+  .profile-card-top {
+    display: block; }
+    .profile-card-top__background {
+      position: relative; }
+      .profile-card-top__background--img {
+        height: 30rem;
+        width: auto;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.03);
+        z-index: -1;
+        margin-top: -3rem; }
+  .profile-card__author {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #2d3248;
+    letter-spacing: .1rem;
+    padding-top: 7rem; }
+    .profile-card__author--img {
+      display: block;
+      height: 8rem;
+      width: auto;
+      border-radius: 100%;
+      border: 3px solid white;
+      margin: 1rem auto;
+      text-align: center; }
+    .profile-card__author--name {
+      margin: 1rem auto;
+      text-align: center; }
+    .profile-card__author--age {
+      color: #6a6f81;
+      margin: 0 .5rem; }
+  .profile-card__profile--location {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    margin-right: .5rem;
+    color: #969696;
+    margin-bottom: 2rem; }
+  .profile-card-stats {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    color: #2d3248;
+    padding: 0;
+    border-top: 2px solid rgba(32, 28, 28, 0.212); }
+    .profile-card-stats > * {
+      display: block;
+      text-transform: capitalize;
+      margin: 2rem 0; }
+  .profile-card__followers--number, .profile-card__likes--number, .profile-card__photos--number {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: .3rem; }
+  .profile-card__followers--text, .profile-card__likes--text, .profile-card__photos--text {
+    color: #969696; }
+
+.bg-top {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+  @media only screen and (max-width: 56.25em) {
+    .bg-top {
+      transform: translate(-60%, -50%); } }
+  @media only screen and (max-width: 46.875em) {
+    .bg-top {
+      transform: translate(-70%, -50%); } }
+  @media only screen and (max-width: 37.5em) {
+    .bg-top {
+      transform: translate(-80%, -50%); } }
+  @media only screen and (max-width: 25em) {
+    .bg-top {
+      transform: translate(-85%, -50%); } }
+
+.bg-bottom {
+  display: block;
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  transform: translate(35%, 30%);
+  z-index: -1; }
+  @media only screen and (max-width: 56.25em) {
+    .bg-bottom {
+      transform: translate(45%, 30%); } }
+  @media only screen and (max-width: 46.875em) {
+    .bg-bottom {
+      transform: translate(55%, 30%); } }
+  @media only screen and (max-width: 37.5em) {
+    .bg-bottom {
+      transform: translate(60%, 30%); } }
+  @media only screen and (max-width: 25em) {
+    .bg-bottom {
+      transform: translate(70%, 30%); } }
